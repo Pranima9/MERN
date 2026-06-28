@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    background-color:antiquewhite;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    
+}
+
+.container button{
+    background-color: #333;
+    border: 2px solid black;
+    /* z-index: 1; */
+}
+
+.popup{
+    background-color: azure;
+    border: 2px solid black;
+    height: 50vh;
+    width: 25vw;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem 1rem;
+    z-index: 1;
+    display: none;
+
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    margin: 0;
+    color: red;
+    font-size: large;
+    border: solid #333 1px ;
+    border-radius: 180px;
+    padding-left: 2px;
+    padding-right:2px ;
+    transition: all 0.15s;
+}
+.close:hover{
+    background-color: brown;
+    color: wheat;
+}
+
+h1{
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 0.5rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+
+button{
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+button.no{
+    background-color: #d9534f;
+    color: white;
+}
+
+button.yes{
+    background-color: white;
+    color: black;
+    border: 1px solid #999;
+}
+
+button.open{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 2; */
+    background-color: #333;
+    color: white;
+    padding: 0.8rem 1.5rem;
+}

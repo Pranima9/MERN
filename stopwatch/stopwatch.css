@@ -1,0 +1,128 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container{
+    height:auto;
+    width:auto% ;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.timer{
+background-color: pink;
+border: 2px solid palevioletred;
+padding: 20px;
+height: 150px;
+width: 20% ;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 15%;
+color: rgb(125, 0, 0);
+font-weight: bold;
+border-radius: 35px;
+
+}
+
+.timer:hover{
+    background-color: #fce4e4;
+    
+}
+
+.time{
+    font-size: 70px;
+
+}
+
+.name{
+    font-size: 30px;
+}
+
+.btns{
+    width:200;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 4%;
+    
+}
+
+.btns button{
+    margin: 20px;
+    height: 80px;
+    width: 200px;
+    border: 0px;
+    cursor: pointer;
+    transition:  0.3s;
+    border-radius: 20px;
+}
+
+.btns button[Start] {
+  background-color: #18a238;
+  color: white;
+  font-size: 20px;
+}
+
+.btns button[Start]:hover {
+    border: 2px solid #18a238;
+    color: #077722;
+    background-color: #a6eeb7;
+    font-weight: bolder;
+
+}
+
+.btns button[Pause] {
+  background-color: #295af0;
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+.btns button[Pause]:hover {
+    border: 2px solid #295af0;
+    color: #0833b4;
+    background-color: #aec1f9;
+    font-weight: bolder;
+
+}
+
+.btns button[Resume] {
+  background-color: #ffffff;
+  color: #295af0;
+  font-size: 20px;
+  border: 2px solid #295af0;
+  display: none;
+}
+
+.btns button[Resume]:hover {
+    border: 2px solid #295af0;
+    color: #0833b4;
+    background-color: #aec1f9;
+    font-weight: bolder;
+
+}
+
+.btns button[Stop] {
+  background-color: #d31d1d;
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+.btns button[Stop]:hover {
+    border: 2px solid #d31d1d;
+    color: #ad0505;
+    background-color: #ffb7b7;
+    font-weight: bolder;
+
+}
