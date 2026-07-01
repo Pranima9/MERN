@@ -1,0 +1,210 @@
+/* @media (1515px){
+
+} */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: beige;
+    height: 100vh;
+    width :100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.body{
+    background-color: bisque;
+    border: 5px solid rgb(249, 130, 130);
+    height:60vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+
+}
+
+.top-row{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-row button{
+    margin: 7px;
+    padding: 5px;
+    height: 3rem;
+    /* width: 8rem; */
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+#clear{
+    background-color: rgb(193, 0, 0);
+    width: 6rem;
+}
+#clear:hover{
+    background-color: rgb(232, 48, 48);
+    border:  2px solid rgb(159, 1, 1);
+}
+
+#delete{
+    background-color: rgb(24, 150, 200);
+    width: 6rem;
+}
+
+#delete:hover{
+    background-color: rgb(46, 177, 229);
+    border: 2px solid rgb(7, 136, 187);
+}
+
+#answer-box{
+    background-color: rgb(97, 97, 97);
+    width: 19rem;
+    cursor: text;
+}
+
+#answer-box:hover{
+    background-color: rgb(108, 108, 108);
+    border: 5px solid rgb(41, 41, 41);
+}
+
+.num-r1{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num-r1 button{
+    margin: 12px;
+    padding: 5px;
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.num-r1 button:hover{
+    background-color: rgb(61, 61, 61);
+    border:  2px solid black ;
+}
+
+
+.num-r2{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num-r2 button{
+    margin: 12px;
+    padding: 5px;
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.num-r2 button:hover{
+    background-color: rgb(61, 61, 61);
+    border:  2px solid black ;
+}
+
+
+.num-r3{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.num-r3 button{
+    margin: 12px;
+    padding: 5px;
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.num-r3 button:hover{
+    background-color: rgb(61, 61, 61);
+    border:  2px solid black ;
+}
+
+
+.num-r4{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num-r4 button{
+    margin: 9px;
+    padding: 5px;
+    height: 3rem;
+    width: 7.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.num-r4 button:hover{
+    background-color: rgb(61, 61, 61);
+    border:  2px solid black ;
+}
+
+
+.symbols{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.symbols button{
+    margin: 8px;
+    padding: 5px;
+    height: 3rem;
+    width: 7.5rem;
+    border: none;
+    background-color: rgb(5, 111, 17);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.symbols button:hover{
+    background-color: rgb(8, 150, 25);
+    border: 2px solid rgb(3, 120, 17);
+
+}
+
+
+
