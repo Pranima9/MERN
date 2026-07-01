@@ -6,13 +6,13 @@
 }
 
 .container{
-    height:auto;
-    width:auto% ;
-    padding:20px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    height: auto;
+    width: auto%;
+    padding: 20px;
+    display: flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
 
 }
 
@@ -32,7 +32,6 @@ font-weight: bold;
 border-radius: 35px;
 
 }
-
 .timer:hover{
     background-color: #fce4e4;
     
@@ -40,6 +39,9 @@ border-radius: 35px;
 
 .time{
     font-size: 70px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 

@@ -11,16 +11,10 @@
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: center;
-    /* display: none; */
-    
+    align-items: center;    
 }
 
-.container button{
-    background-color: #333;
-    border: 2px solid black;
-    /* z-index: 1; */
-}
+
 
 .popup{
     background-color: azure;
@@ -28,13 +22,13 @@
     height: 50vh;
     width: 25vw;
     position: absolute;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    gap: 1rem;
-    padding: 1.5rem 1rem 1rem;
-    z-index: 1;
+    gap: 2rem;
+    padding:10rem;
+    /* z-index: 1; */
     display: none;
 
 }
@@ -72,7 +66,7 @@ h1{
 }
 
 
-button{
+.buttons button{
     cursor: pointer;
     padding: 0.75rem 1.25rem;
     border: none;
@@ -82,26 +76,36 @@ button{
     font-size: 1rem;
 }
 
-
-
 button.no{
-    background-color: #d9534f;
-    color: white;
+    background-color: #ffcecd;
+    color: rgb(150, 0, 0);
+    border: 2px solid rgb(201, 0, 0);
+    font-weight: bold;
 }
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+}
+
 
 button.yes{
-    background-color: white;
+    background-color: rgb(203, 255, 193);
     color: black;
-    border: 1px solid #999;
+    border: 2px solid #009331;
+    font-weight: bold;
 }
+button:hover{
+    background-color: rgb(255, 255, 255);
+}
+
 
 button.open{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* z-index: 2; */
     background-color: #333;
     color: white;
+    border-radius: 10px;
     padding: 0.8rem 1.5rem;
 }
