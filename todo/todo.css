@@ -221,7 +221,8 @@ h1{
     padding: 30px 20px;
     margin-top: 200px;
     background-color: rgb(254, 224, 224);
-    display: none;
+    z-index: 2;
+    /* display: none; */
 }
 
 .add input{
