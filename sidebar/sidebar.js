@@ -1,6 +1,6 @@
 const sideBtn = document.querySelector(".sideBtn")
 const sidebar = document.querySelector(".sidebar")
-const sideBtn1 = document.querySelector("sideBtn1")
+const sideBtn1 = document.querySelector(".sideBtn1")
 const sidebarS = document.querySelector(".sidebarS")
 
 
@@ -10,8 +10,10 @@ sideBtn.addEventListener("click",function(){
 })
 
 sideBtn1.addEventListener("click",function(){
-    sidebarS.style.display = "none"
     sidebar.style.display = "flex"
+    sidebarS.style.display = "none"
 })
+
+
 
 
