@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./todo.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+       <h1>TO DO LIST</h1>
+       <div class="search">
+        <input type="search" name="search" placeholder="Search your to-do's...">
+        <i class="fa-solid fa-magnifying-glass" ></i>
+        <button add>Add</button>
+       </div> 
+       <div class="add">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="task" placeholder="Task">
+        <input type="text" name="deadline" placeholder="Enter the Deadline" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <button ok>ADD</button>
+       </div>
+       <div class="cards">
+        <div class="card card1">
+            <h2>Draft an email</h2>
+            <h2>. <br> . <br>. <br>. <br> . <br>. <br>. <br>. <br>
+            </h2>
+            <h2>02/06/2026</h2>
+        </div>
+        <div class="card card2">
+            <h2>Buy Groceries</h2>
+            <h2>. <br> . <br>. <br>. <br> . <br>. <br>. <br>. <br>
+            </h2>
+            <h2>02/06/2026</h2>        </div>
+        <div class="card card3">
+            <h2>Take Dog on Walk</h2>
+            <h2>. <br> . <br>. <br>. <br> . <br>. <br>. <br>. <br>
+            </h2>
+            <h2>02/06/2026</h2>
+        </div>
+       </div>
+    </div>
+
+</body>
+</html>
