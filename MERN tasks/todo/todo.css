@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 339px;
+}
+
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .searchbar {
+    width: 90%;
+  }
+
+  .searchbar i {
+    left: 15px;
+    margin-right: 0px;
+  }
+
+  .searchbar button {
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .cards {
+    width: 95%;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 300px;
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    height: 100%;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .searchbar {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .searchbar i {
+    margin-bottom: 60px;
+  }
+
+  .searchbar > button {
+    height: 30px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 339px) {
+  .container {
+    padding: 10px;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .searchbar {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 80px;
+    padding: 8px;
+  }
+
+  .searchbar input {
+    height: 42px;
+    font-size: 14px;
+    padding-left: 38px;
+  }
+
+  .searchbar i {
+    margin-right: 0;
+    right: 12px;
+    left: auto;
+    margin-bottom: 0;
+  }
+
+  .searchbar > button {
+    height: 36px;
+    width: 100%;
+    font-size: 14px;
+    margin: 6px 0 0;
+  }
+
+  .add {
+    margin-top: 180px;
+    padding: 15px 10px;
+  }
+
+  .add input {
+    width: 100%;
+    height: 46px;
+    font-size: 15px;
+    margin: 8px 0;
+  }
+
+  .add button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .cards {
+    width: 100%;
+    margin-top: 190px;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: 180px;
+    margin: 0 0 15px;
+  }
+}
+
+.container {
+  background-color: beige;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+}
+h1 {
+  color: brown;
+  font-weight: bolder;
+  font-family: Cambria, serif;
+  font-size: 60px;
+  position: absolute;
+  /* display: none; */
+}
+
+.searchbar {
+  border: 2px solid gray;
+  height: 50px;
+  width: 500px;
+  margin-top: 100px;
+  border: 2px;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+.searchbar input {
+  height: 50px;
+  width: 100%;
+  padding-left: 50px;
+  font-size: 16px;
+}
+.searchbar i {
+  position: absolute;
+  color: gray;
+  margin-right: 450px;
+}
+.searchbar button {
+  background-color: skyblue;
+  height: 50px;
+  width: 120px;
+  margin: 5px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  padding: 12px;
+  border: 1px solid navy;
+}
+
+.searchbar button:hover {
+  background-color: rgb(173, 232, 255);
+  transition: 0.2s;
+  font-size: 21px;
+}
+
+.addForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid gray;
+  height: fit-content;
+  padding: 30px 20px;
+  margin-top: 200px;
+  background-color: rgb(254, 224, 224);
+  z-index: 2;
+  display: none;
+}
+
+.addForm input {
+  height: 60px;
+  width: 350px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.addForm button {
+  cursor: pointer;
+  background-color: rgb(156, 255, 164);
+  color: rgb(0, 95, 0);
+  font-size: 11px;
+  font-weight: bold;
+  height: 40px;
+  width: 60px;
+  margin-left: 320px;
+  margin-top: 10px;
+  border: 1 px solid rgb(255, 255, 255);
+}
+
+.addForm button:hover {
+  transition: 0.3s;
+  padding: 3px;
+  background-color: rgb(188, 255, 163);
+  font-size: 12px;
+}
+
+.cards {
+  width: 90vw;
+  background-color: aliceblue;
+  margin-top: 200px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 2px solid gray;
+  padding: 20px;
+  gap: 20px;
+}
+.card {
+  background-color: blanchedalmond;
+  width: 300px;
+  min-height: 220px;
+  margin: 20px 0;
+  border: 2px solid rgb(166, 166, 166);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.delete-btn {
+  align-self: flex-start;
+  background-color: rgb(255, 120, 120);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.empty-state {
+  width: 100%;
+  text-align: center;
+  color: gray;
+  padding: 20px;
+}
