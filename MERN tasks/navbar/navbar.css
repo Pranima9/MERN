@@ -6,13 +6,32 @@
 
 
 .navbar {
-        background-color: brown;
-        height: 20%;
-        display: flex;
-        justify-content:space-between ;
-        align-items: center;
+    height: 6.5vh;
+    background-color: brown;
+    padding: 5px 15px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
 }
 
 .logo{
-    
+    margin-left: 5%;
+    color: white;
+}
+
+.links{
+    display: flex;
+    gap: 25%;
+    list-style: none;
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.searchbar{
+    margin-right: 2%;
+
 }
