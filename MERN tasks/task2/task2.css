@@ -1,45 +1,53 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container{
     background-color: rgb(176, 225, 225);
-    border: solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width:100%;
-    position: relative;
-    flex-wrap: wrap;
 }
 
 .body{
-    background-color: aliceblue;
-    height: 70vh;
+    height: 70%;
     width: 45vw;
-    border: 1px solid red;
     display: flex;
-    flex-wrap: wrap;
-
+    background-color: antiquewhite;
+    justify-content: center;
 }
 
 .image{
     background-color: rgb(0, 255, 170);
     height:70vh;
     width:25vw;
-    position: absolute;
-    margin-left: 0;
     display: flex;
-    flex-wrap: wrap;
     opacity: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     
-    
+    /* display: none; */  
 }
 
-.image.paragraph{
-    margin-bottom: 20px;
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    position:absolute;
+}
+
+.paragraph{
+    font-size: 45px;
+    color: aliceblue;
+    margin-right: 25%;
+    margin-top: 80%;
+    position: absolute;
 }
 
 .form{
@@ -52,6 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;  
+    display: none;
 }
 
 h1{
