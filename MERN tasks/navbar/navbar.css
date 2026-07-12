@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.navbar {
+        background-color: brown;
+        height: 20%;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+}
+
+.logo{
+    
+}
