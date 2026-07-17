@@ -1,16 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
     
 }
-
-/* .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width:100%;
-} */
 
 .navbar {
     height: 6.5vh;
@@ -102,4 +95,141 @@
 #searchBtn{
     width: 15%;
     height: 42px;
+}
+
+
+/* Add this at the end of your navbar.css */
+
+/* laptop screeens  */
+@media (max-width: 1450px) {
+   .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .links {
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    .btns {
+        width: 20%;
+        flex-direction: ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btns button {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .searchbar {
+        margin-right: 5%;
+        margin-left: 60%;
+        width: 35%;
+        margin-top: 10px;
+    }
+
+    .searchbar input {
+        width: 80%;
+    }
+    #searchbtn{
+        padding: 5px;
+        font-size: small;
+    }
+}
+
+/* mid screens */
+@media (max-width:900px) {
+    .navbar {
+        justify-content: center;
+
+    }
+    
+     .links {
+        margin-left: 100% ;
+        gap: 10px;
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+
+
+    .btns {
+        width: 80%;
+        flex-direction: column;
+        margin-left: 40%;
+    }
+
+    .btns button {
+        width: 70%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    body{
+        justify-content: center;
+    }
+
+     .searchbar  {
+        width: 35%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #searchBtn {
+        width: 20%;
+        margin: 1px 1px;
+    }
+    
+}
+
+body{
+    min-width: 500px
+}
+
+/* Mobile - Small screens (480px and below) */
+@media (max-width: 540px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+
+    .links {
+        margin: 10px;
+        gap: 20px;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btns {
+        margin: 10px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btns button {
+        width: 90%;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    .searchbar {
+        margin: 0 ;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #searchBtn {
+        width: 20%;
+        margin: 1px 1px;
+    }
 }
