@@ -1,4 +1,102 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    height: 6.5vh;
+    background-color: rgb(126, 0, 0);
+    padding: 5px 15px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.logo{
+    margin-left: 5%;
+    color: rgb(231, 231, 231);
+}
+
+.links{
+    display: flex;
+    gap: 15%;
+    list-style: none;
+    font-size: larger;
+}
+
+.btns{
+    gap: 15%;
+    margin: 2%;
+    width: 15%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: aqua; */
+}
+
+.btns button{
+    height: 40px;
+    width: 100px;
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0px ;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+
+#loginbtn{
+    background-color: rgb(27, 196, 69);
+    transition: 0.3s;
+}
+#loginbtn:hover{
+    background-color: rgb(85, 244, 124);
+    color: rgb(4, 141, 38);
+}
+
+#regbtn{
+    background-color: rgb(100, 100, 226);
+    transition: 0.3s;
+}
+#regbtn:hover{
+    background-color: rgb(178, 178, 255);
+    color: rgb(51, 51, 165);
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.searchbar{
+    margin-left: 38%;
+    margin-top: 2.5%;
+    /* background-color: antiquewhite; */
+    height:50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar input{
+    height: 40px;
+    width: 80%;
+    padding-left: 15px;
+    border: 1px solid black;
+}
+
+#searchBtn{
+    width: 15%;
+    height: 42px;
+}
+
 
 /* Add this at the end of your navbar.css */
 
