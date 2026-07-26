@@ -2,6 +2,7 @@
 
 import express from "express";
 import userRoute from "./routes/user.route.js"; //userRoute or Route j lekhda ni vayo
+import db from "./database/db.js";
 
 const app = express(); //app ko thauma j lekhda ni hunxa
 
