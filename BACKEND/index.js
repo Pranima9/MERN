@@ -2,11 +2,12 @@
 
 import express from "express";
 import userRoute from "./routes/user.route.js"; //userRoute or Route j lekhda ni vayo
-import db from "./database/db.js";
+import cors from 'cors';
 
 const app = express(); //app ko thauma j lekhda ni hunxa
 
 app.use(express.json()); //changes to language which javascript understands
+app.use(cors)
 
 app.use("/api",userRoute) // path becomes http://loclahost:5555/api/get-data
 
