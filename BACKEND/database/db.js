@@ -13,4 +13,4 @@ if (db.connect){
     console.log("error while connecting database");
 }
 
-export default db
+export default db;
