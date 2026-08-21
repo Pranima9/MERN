@@ -1,5 +1,6 @@
 //req and res handling
 import db from "../database/db";
+import bcrypt from "bcryptjs";
 
 export const getUser = (req, res) => { //'export' is for to use this function in another file
         res.send("From HTTP GET Request.");  //copied from index.js
@@ -95,3 +96,24 @@ export const editUser = (req,res) =>{
 };
 
  //THESE ARE ALL APIs WE MADE, 5 OF THEM IT MAKE US DO CRUD OPERARIONS
+
+
+ export const fileUpload = (req, res) => {
+    console.log(req.files);
+    res.send(req.files);
+
+    // const file = req.file;
+
+  // const { id } = req.params;
+  // console.log(req.file);
+  // res.send(req.file);
+
+  // const path = `/images/${file.filename}`;
+  // const q = `update user set image = ? where id = ?`;
+  // db.query(q, [path, id], (err, result) => {
+  //   if (err) {
+  //     return res.status(500).send("");
+  //   }
+  //   return res.status(200).send("Image saved");
+  // });
+ }
