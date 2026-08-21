@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs"
 export const login = (req,res) => {
     const{email, password} = req.body;
 
-    // try{
+    try{
         const q ="select * from user where email = ?";
 
         db.query(q,[email], (error, result) => {
@@ -41,7 +41,7 @@ export const login = (req,res) => {
 
             return res.status(400).send ({message: "email or password not matched."});
         });
-    // } catch (err) {
-    //     console.log(err);
-    // }
+    } catch (err) {
+        console.log(err);
+    }
 };
