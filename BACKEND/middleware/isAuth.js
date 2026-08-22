@@ -27,4 +27,26 @@ export const isLoggedIn = (req, res, next) => {
 };
 
 
-// complete
+export const isAdmin = (req, res, next) => {
+  req.userRole === "Admin"
+    ? next()
+    : res.status(401).send({ message: "Access denied" });
+};
+
+export const isManager = (req, res, next) => {
+  req.userRole === "Manager"
+    ? next()
+    : res.status(401).send({ message: "Access denied" });
+};
+
+export const isStaff = (req, res, next) => {
+  req.userRole === "Staff"
+    ? next()
+    : res.status(401).send({ message: "Access denied" });
+};
+export const isStaffAndManager = (req, res, next) => {
+  req.userRole === "Staff" || req.userRole === "Manager"
+    ? next()
+    : res.status(401).send({ message: "Access denied" });
+};
+
